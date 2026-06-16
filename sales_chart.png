@@ -1,0 +1,45 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sales Data
+data = {
+    "Product": [
+        "Laptop",
+        "Mouse",
+        "Keyboard",
+        "Monitor",
+        "Printer",
+        "Headphones",
+        "Webcam"
+    ],
+    "Revenue": [
+        500000,
+        25000,
+        45000,
+        180000,
+        64000,
+        50000,
+        60000
+    ]
+}
+
+df = pd.DataFrame(data)
+
+# Create Chart
+plt.figure(figsize=(10, 5))
+
+plt.bar(df["Product"], df["Revenue"])
+
+plt.title("Sales Revenue by Product")
+plt.xlabel("Products")
+plt.ylabel("Revenue (₹)")
+
+plt.tight_layout()
+
+# Save Image
+plt.savefig("sales_chart.png")
+
+# Display Chart
+plt.show()
+
+print("sales_chart.png created successfully!")
