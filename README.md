@@ -35,8 +35,7 @@ SalesAnalysisSystem/
 │
 ├── sales_analysis.py
 ├── sales_report.csv
-├── revenue_bar_chart.png
-├── revenue_pie_chart.png
+├── sales_chart.png
 └── README.md
 ```
 
